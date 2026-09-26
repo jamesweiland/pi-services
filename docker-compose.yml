@@ -9,7 +9,7 @@ services:
     volumes:
       - /dev/urandom:/opt/unbound/etc/unbound/dev/urandom
       - /dev/random:/opt/unbound/etc/unbound/dev/random
-      - /home/dubs/unbound/forward-records.conf:/opt/unbound/etc/unbound/forward-records.conf
+      - ./unbound/forward-records.conf:/opt/unbound/etc/unbound/forward-records.conf
     networks:
       wg:
         ipv4_address: 10.8.1.4
