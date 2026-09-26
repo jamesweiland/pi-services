@@ -108,7 +108,7 @@ services:
     <<: *restart-policy
     image: ghcr.io/jamesweiland/james-weiland:latest
     ports:
-      - '4321:80'
+      - '127.0.0.1:4321:80'
 
 networks:
   wg:
